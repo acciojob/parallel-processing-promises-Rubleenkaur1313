@@ -1,7 +1,8 @@
 const imageUrls = [
-    'https://example.com/image1.jpg',
-    'https://example.com/image2.jpg',
-    'https://example.com/image3.jpg'
+    'https://via.placeholder.com/150/0000FF/FFFFFF?text=Image+1',
+    'https://via.placeholder.com/150/FF0000/FFFFFF?text=Image+2',
+    'https://via.placeholder.com/150/00FF00/FFFFFF?text=Image+3',
+    // Add more image URLs as needed
 ];
 
 function downloadImage(url) {
@@ -43,5 +44,5 @@ async function downloadImages() {
     }
 }
 
-// Start downloading images
-downloadImages();
+// Attach event listener to the button
+document.getElementById('downloadBtn').addEventListener('click', downloadImages);
